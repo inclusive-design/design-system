@@ -9,7 +9,7 @@ Design system practices for the Inclusive Design Research Centre.
 Design tokens should be named as follows:
 
 ```
-system - category - concept - [concept-variant] - [property] - [property-variant] - [state]
+system - [element] - category - [concept] - [concept-variant] - [property] - [property-variant] - [state]
 ```
 
 #### Practical examples
