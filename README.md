@@ -29,8 +29,8 @@ Buttons:
 ```css
 :root {
   /* system - category - concept - property - state */
-  --idrc-color-button-background-default: oklch(0.4724 0.2127 270.65);
-  --idrc-color-button-background-hover: oklch(0.3668 0.0889 286.32);
+  --idrc-color-button-surface-default: oklch(0.4724 0.2127 270.65);
+  --idrc-color-button-surface-hover: oklch(0.3668 0.0889 286.32);
   /* system - category - concept - concept-variant - property - state */
-  --idrc-color-button-secondary-background-default: oklch(0.9423 0.0235 256.1);
+  --idrc-color-button-secondary-surface-default: oklch(0.9423 0.0235 256.1);
 }
