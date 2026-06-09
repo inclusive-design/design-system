@@ -9,7 +9,7 @@ Design system practices for the Inclusive Design Research Centre.
 Design tokens should be named as follows:
 
 ```
-system - [element] - category - [concept] - [concept-variant] - [property] - [property-variant] - [state]
+system - [element] - [element-variant] - category - [concept] - [concept-variant] - [property] - [property-variant] - [state]
 ```
 
 #### Practical examples
@@ -28,9 +28,9 @@ Buttons:
 
 ```css
 :root {
-  /* system - category - concept - property - state */
-  --idrc-color-button-surface-default: oklch(0.4724 0.2127 270.65);
-  --idrc-color-button-surface-hover: oklch(0.3668 0.0889 286.32);
-  /* system - category - concept - concept-variant - property - state */
-  --idrc-color-button-secondary-surface-default: oklch(0.9423 0.0235 256.1);
+  /* system - element - category - property - state */
+  --idrc-button-color-surface-default: oklch(0.4724 0.2127 270.65);
+  --idrc-button-color-surface-hover: oklch(0.3668 0.0889 286.32);
+  /* system - element - element-variant - category - property - state */
+  --idrc-button-secondary-color-surface-default: oklch(0.9423 0.0235 256.1);
 }
