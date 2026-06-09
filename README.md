@@ -14,7 +14,7 @@ system - category - concept - [concept-variant] - [property] - [property-variant
 
 #### Practical examples
 
-Colors:
+Colors (as primitive tokens, these do not have a property):
 
 ```css
 :root {
