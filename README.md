@@ -2,6 +2,41 @@
 
 Design system practices for the Inclusive Design Research Centre.
 
+## Figma Workflow
+
+We use the [Tokens Brücke](https://github.com/tokens-bruecke/figma-plugin) plugin
+to export variables from Figma.
+
+We use the following advanced settings:
+
+- Color Mode: OKLCH DTCG
+
+- [ ] Split collections into separate files
+- [ ] Split modes into separate files
+- [ ] Omit collection names
+- [ ] Include variable scopes
+- [ ] Use percentage for opacity
+- [x] Use DTCG keys format
+- [ ] Include `.value` string for aliases
+- [ ] Include Figma metadata
+
+To obtain the Design Token JSON files from Tokens Brücke, open the plugin, confirm
+that the settings are configured correctly, and then click **Download JSON** to
+download the token file. With a GitHub token, it can also be synced directly to
+the repo, e.g. [src/design-tokens/synced/design.tokens.json](https://github.com/inclusive-design/financial-inclusion.ca/blob/7862fe47f261f60077063c6c5ec783bc5fc6e657/src/design-tokens/synced/design.tokens.json)
+
+Some adjustments need to be made to the downloaded file, as follows:
+
+1. A generic UIO theme needs to be created which maps UIO primitives to different
+   color tokens.
+2. Dark mode and contrast themes need to be created.
+3. Unnecessary group prefixes need to be removed from variable names.
+4. Extraneous properties need to be removed from variables.
+5. The `$type` values need to be standardized to match the DTCG spec.
+6. Updated tokens need to be written to their own files in the repo.
+
+These steps are all handled in an [`eleventy.before` hook](https://github.com/inclusive-design/financial-inclusion.ca/blob/7862fe47f261f60077063c6c5ec783bc5fc6e657/eleventy.config.js#L100).
+
 ## Design Tokens
 
 ### Naming Convention
